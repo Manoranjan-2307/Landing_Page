@@ -12,11 +12,11 @@ const App = () => {
     <>
       <Navlinks />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/sign_in" element={<SignIn />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/Landing_Page/" element={<Home />} />
+        <Route path="/Landing_Page/about" element={<About />} />
+        <Route path="/Landing_Page/contact" element={<Contact />} />
+        <Route path="/Landing_Page/sign_in" element={<SignIn />} />
+        <Route path="/Landing_Page/features" element={<Features />} />
       </Routes>
     </>
   );
