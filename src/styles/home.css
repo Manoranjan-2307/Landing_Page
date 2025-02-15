@@ -1,0 +1,134 @@
+:root {
+  --home-bg: #1a1a1a;
+  --home-text: #ffffff;
+  --primary-btn: #6a5acd;
+  --secondary-btn: #4a4a4a;
+  --btn-hover: #5a4fcf;
+  --input-bg: #2a2a2a;
+  --input-text: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+* {
+  font-family: Tahoma, sans-serif;
+}
+
+
+.home {
+  text-align: center;
+  background: var(--home-bg);
+  color: var(--home-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--input-text);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.search-bar input:focus {
+  outline: 2px solid var(--primary-btn);
+  outline-offset: 2px;
+}
+
+.search-bar button {
+  background: var(--primary-btn);
+  color: var(--home-text);
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-bar button:hover {
+  background: var(--btn-hover);
+  transform: translateY(-1px);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.free-trial, .see-more {
+  padding: 0.85rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.free-trial {
+  background: var(--primary-btn);
+  color: var(--home-text);
+}
+
+.see-more {
+  background: var(--secondary-btn);
+  color: var(--home-text);
+}
+
+.free-trial:hover, .see-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+  
+  .home h1 {
+    font-size: 2rem;
+  }
+  
+  .search-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search-bar button {
+    padding: 0.85rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+button:focus {
+  outline: 2px solid var(--primary-btn);
+  outline-offset: 2px;
+}
